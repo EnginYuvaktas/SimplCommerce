@@ -112,13 +112,13 @@
                 {
                     if (assetBundling)
                     {
-                        <script simpl-append-version="true" src="~/modules/@module.Id.Split('.').Last().ToLower()/admin/@outputFileName.Replace("wwwroot/admin/", "")"></script>
+                        <script simpl-append-version="true" src="~/modules/@module.Id.Split('.').Last().ToLowerInvariant()/admin/@outputFileName.Replace("wwwroot/admin/", "")"></script>
                     }
                     else
                     {
                         foreach (string inputFile in configItems.inputFiles)
                         {
-                            <script simpl-append-version="true" src="~/modules/@module.Id.Split('.').Last().ToLower()/admin/@inputFile.Replace("wwwroot/admin/", "")"></script>
+                            <script simpl-append-version="true" src="~/modules/@module.Id.Split('.').Last().ToLowerInvariant()/admin/@inputFile.Replace("wwwroot/admin/", "")"></script>
                         }
                     }
                 }
